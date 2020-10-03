@@ -1,0 +1,18 @@
+.progressbar {
+  display: block;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #d8d8d8;
+  background-color: azure;
+}
+
+.inner {
+  height: 100%;
+  width: 0%;
+  background-color: chartreuse;
+  transition: all 0.5s;
+}
+
+.inner.progress {
+  width: 100%;
+}
