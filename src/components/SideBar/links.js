@@ -1,5 +1,9 @@
 export default [
   {
+    name: 'Home',
+    path: '/',
+  },
+  {
     name: 'ProgressBar in CSS',
     path: 'ProgressBarCSS',
   },
