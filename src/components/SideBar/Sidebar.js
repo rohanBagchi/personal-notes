@@ -1,11 +1,24 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import links from './links';
 import styles from './styles.module.css';
 
-const SideBar = () => {
+const SideBar = ({ onLinkClick }) => {
   const router = useRouter();
   const componentFileName = router.asPath.split('/').pop();
+
+  useEffect(() => {
+    const handleRouteChangeComplete = () => {
+      onLinkClick();
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChangeComplete);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChangeComplete);
+    };
+  }, [onLinkClick, router.events]);
 
   const renderContent = () =>
     links.map((link, index) => (

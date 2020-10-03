@@ -19,7 +19,7 @@ const TestingQuerySelectorAll = () => {
       <button type="button" onClick={findElement}>
         Find all Elements!!
       </button>
-      Given a DOM of following structure:{' '}
+      <p>Given a DOM of following structure: </p>
       <pre>
         {`
           <div id="root" ref={referenceToRoot}>

@@ -20,6 +20,7 @@ a {
   display: flex;
   min-height: 100vh;
   width: 100vw;
+  position: relative;
 }
 
 .sidebar {
@@ -31,4 +32,32 @@ a {
   width: 80%;
   background-color: cornsilk;
   padding: 20px;
+}
+
+.sidebar .sidebar-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0%;
+  }
+  .sidebar .sidebar-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  .sidebar.show-in-mobile {
+    width: 100%;
+  }
+  .sidebar.show-in-mobile .sidebar-toggle {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .content.hide-in-mobile {
+    display: none;
+  }
 }
