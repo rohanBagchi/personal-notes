@@ -39,4 +39,24 @@ export default [
     name: 'Promise',
     path: 'Promise',
   },
+  {
+    name: 'BoxSizing',
+    path: 'BoxSizing',
+  },
+  {
+    name: 'PreloadPrefetchAndPreconnect',
+    path: 'PreloadPrefetchAndPreconnect',
+  },
+  {
+    name: 'ReactComponentLifeCycle',
+    path: 'ReactComponentLifeCycle',
+  },
+  {
+    name: 'CriticalRenderPath',
+    path: 'CriticalRenderPath',
+  },
+  {
+    name: 'WhyBindClassMethodsInReact',
+    path: 'WhyBindClassMethodsInReact',
+  },
 ];

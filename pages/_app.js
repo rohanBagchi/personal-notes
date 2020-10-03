@@ -9,7 +9,7 @@ import SideBar from '../src/components/SideBar';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const componentFileName = router.asPath.split('/').pop();
-  const pageTitle = links.find(({ path }) => path === componentFileName).name;
+  const pageTitle = links.find(({ path }) => path === componentFileName)?.name;
   return (
     <div className="container">
       <Head>
