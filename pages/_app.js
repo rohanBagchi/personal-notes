@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { MDXProvider } from '@mdx-js/react';
 import links from '../src/components/SideBar/links';
-import CodeBlock from './CodeBlock';
+import CodeBlock from '../src/components/CodeBlock';
 
 import '../styles/globals.css';
 import './ProgressBarCSS.css';
