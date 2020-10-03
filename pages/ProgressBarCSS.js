@@ -6,8 +6,12 @@ const ProgressBarCSS = () => {
 
   return (
     <>
-      <button onClick={() => setProgress(true)}>Go!</button>
-      <button onClick={() => setProgress(false)}>Reset</button>
+      <button type="button" onClick={() => setProgress(true)}>
+        Go!
+      </button>
+      <button type="button" onClick={() => setProgress(false)}>
+        Reset
+      </button>
       <div className="progressbar">
         <div className={`inner ${progress === true ? 'progress' : ''}`} />
       </div>

@@ -24,8 +24,12 @@ const ProgressBarJS = () => {
 
   return (
     <>
-      <button onClick={() => setProgress(true)}>Go!</button>
-      <button onClick={() => setProgress(false)}>Reset</button>
+      <button type="button" onClick={() => setProgress(true)}>
+        Go!
+      </button>
+      <button type="button" onClick={() => setProgress(false)}>
+        Reset
+      </button>
       <div
         style={{
           height: '50px',
