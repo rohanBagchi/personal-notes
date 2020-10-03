@@ -1,4 +1,5 @@
 import React, { createRef } from 'react';
+import Gist from 'react-gist';
 import { simpleQuerySelectorAll } from '../utils';
 
 const TestingQuerySelectorAll = () => {
@@ -20,7 +21,7 @@ const TestingQuerySelectorAll = () => {
       </button>
       Given a DOM of following structure:{' '}
       <pre>
-        {`      
+        {`
           <div id="root" ref={referenceToRoot}>
             <div>
               <span />
@@ -37,6 +38,7 @@ const TestingQuerySelectorAll = () => {
         `}
       </pre>
       Find all elements matching the passed in selector: <strong>Span</strong>
+      <Gist id="5836025aa1e10b881f1f624fa02e65d9" />
       <div id="root" ref={referenceToRoot}>
         <div>
           <span />

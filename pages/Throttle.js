@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Gist from 'react-gist';
 import { throttle } from '../utils';
 
 const Throttle = () => {
@@ -21,29 +22,7 @@ const Throttle = () => {
         Reset
       </button>
       <p>{msg}</p>
-      <div>
-        <pre>
-          {`
-            const throttle = (fn, timeOut, context = null) => {
-              let timeOutID;
-
-              return function throttledFunction(...args) {
-                if (timeOutID) return;
-
-                timeOutID = setTimeout(() => {
-                  fn.apply(context, args);
-                  clearTimeout(timeOutID);
-                }, timeOut);
-              };
-            };
-
-            const foo = (message) => setMsg(\`Message: \${message}\`);
-            const throttlededFoo = throttle(foo, 1000);
-            throttlededFoo('Hi');
-            throttlededFoo('Hi, I am Rohan');
-          `}
-        </pre>
-      </div>
+      <Gist id="bfd4a12576e080cc6ea135c9ca228dee" />
     </div>
   );
 };

@@ -34,27 +34,8 @@ const Promise = () => {
 
       <h4>Promise Results</h4>
       <pre>{JSON.stringify(promiseMessages, null, 2)}</pre>
-      <pre>
-        {`
-          new CustomPromise((resolve, reject) => {
-            setTimeout(() => {
-              resolve('I am a resolved value!!!');
-            }, 10);
-          })
-            .then((resolvedValue) => {
-              this.setState((prevState) => ({
-                promiseMessages: [...prevState.promiseMessages, resolvedValue],
-              }));
-              return 'I am next resolved value';
-            })
-            .then((resolvedValue) => {
-              console.warn(resolvedValue);
-              this.setState((prevState) => ({
-                promiseMessages: [...prevState.promiseMessages, resolvedValue],
-              }));
-            });
-          `}
-      </pre>
+
+      <Gist id="a70a77802ef17361a1b0328a0b42cffe" />
       <Gist id="cbcbabd037e9c3e3edc7fae9e8f5c605" />
     </div>
   );

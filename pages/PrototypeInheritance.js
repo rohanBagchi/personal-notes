@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Gist from 'react-gist';
 
 const Person = {
   name: 'Rohan',
@@ -32,26 +33,8 @@ const PrototypeInheritance = () => {
         Reset
       </button>
       <p>{msg}</p>
-      <div>
-        <pre>
-          {`
-            const Person = {
-              name: 'Rohan',
-              age: 30,
-            };
 
-            const Engineer = {
-              skills: ['JavaScript', 'React'],
-            };
-
-            Object.setPrototypeOf(Engineer, Person);
-
-            Engineer.name
-            Engineer.age
-            Engineer.skills
-          `}
-        </pre>
-      </div>
+      <Gist id="311fd2fed78e808f83a0fbd235bf8d88" />
     </div>
   );
 };

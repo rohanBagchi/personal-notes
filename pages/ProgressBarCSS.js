@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Gist from 'react-gist';
 
 const ProgressBarCSS = () => {
   const [progress, setProgress] = useState(false);
@@ -10,6 +11,8 @@ const ProgressBarCSS = () => {
       <div className="progressbar">
         <div className={`inner ${progress === true ? 'progress' : ''}`} />
       </div>
+
+      <Gist id="d7f32e3d6b58547aa718e2ae558567b8" />
     </>
   );
 };

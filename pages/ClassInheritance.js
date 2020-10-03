@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Gist from 'react-gist';
 
 function Person(name, age) {
   this.name = name;
@@ -34,30 +35,8 @@ const ClassInheritance = () => {
         Reset
       </button>
       <p>{msg}</p>
-      <div>
-        <pre>
-          {`
-            function Person(name, age) {
-                this.name = name;
-                this.age = age;
-            }
 
-            function Teacher(name, age, grade) {
-                Person.call(this, name, age);
-                this.grade = grade;
-            }
-
-            Teacher.prototype = Object.create(Person.prototype);
-
-            Person.prototype.sayName = function () {
-                console.log(\`Hello, I am \${this.name}; I am \${this.age} years old.\`);
-            };
-
-            const teacher = new Teacher('Rohan', 30, 12);
-            teacher.sayName()
-        `}
-        </pre>
-      </div>
+      <Gist id="9a62415a812a3435d9fad57db756f734" />
     </div>
   );
 };

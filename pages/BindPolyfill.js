@@ -1,4 +1,5 @@
 import React from 'react';
+import Gist from 'react-gist';
 import { bind } from '../utils';
 
 export default class BindPolyfill extends React.Component {
@@ -36,32 +37,7 @@ export default class BindPolyfill extends React.Component {
 
         <h4>Bind Results</h4>
         <pre>{JSON.stringify(this.state.message, null, 2)}</pre>
-        <pre>
-          {`
-            sayHello(preApplied, newArg) {
-              const newData = {
-                preApplied,
-                newArg,
-                currentUser: 'Foo',
-              };
-
-              this.setState({ message: newData });
-            }
-
-            <button
-              type="button"
-              onClick={() =>
-                bind(
-                  this.sayHello,
-                  this,
-                  'I am a pre applied string'
-                )('I am a new argument')
-              }
-            >
-              Run bind polyfill!!
-            </button>
-          `}
-        </pre>
+        <Gist id="8985ab8d1d31181d8c25135e9304cd32" />
       </div>
     );
   }

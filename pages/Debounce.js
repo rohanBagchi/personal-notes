@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Gist from 'react-gist';
 import { debounce } from '../utils';
 
 const Debounce = () => {
@@ -21,30 +22,7 @@ const Debounce = () => {
         Reset
       </button>
       <p>{msg}</p>
-      <div>
-        <pre>
-          {`
-            const debounce = (fn, timeOut, context = null) => {
-              let timeOutID;
-
-              return function debouncedFn(...args) {
-                if (timeOutID) {
-                  clearTimeout(timeOutID);
-                }
-
-                timeOutID = setTimeout(() => {
-                  fn.apply(context, args);
-                }, timeOut);
-              };
-            };
-
-            const foo = (message) => setMsg(\`Message: \${message}\`);
-            const debouncedFoo = debounce(foo, 1000);
-            debouncedFoo('Hi');
-            debouncedFoo('Hi, I am Rohan');
-          `}
-        </pre>
-      </div>
+      <Gist id="c3d1bf6aadbde583cf8b8e11e73f99e5" />
     </div>
   );
 };
