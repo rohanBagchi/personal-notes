@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.18",
+    "@mdx-js/react": "^1.6.18",
     "@next/mdx": "^9.5.3",
     "next": "9.5.3",
+    "prism-react-renderer": "^1.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-gist": "^1.2.2"
+    "react-gist": "^1.2.2",
+    "react-live": "^2.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

@@ -1,9 +1,10 @@
 # React Class Component Lifecycle Methods
 
 <https://reactjs.org/docs/react-component.html#the-component-lifecycle>
+
 <https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/>
 
-![React Class Component Lifecycle](./react-life-cycle.png)
+![React Class Component Lifecycle](/react-life-cycle.png)
 
 Mounting Phase:
 
