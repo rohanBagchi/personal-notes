@@ -11,7 +11,7 @@ import SideBar from '../src/components/SideBar';
 
 const components = {
   // eslint-disable-next-line react/display-name
-  pre: (props) => <div {...props} />,
+  pre: (props) => <div {...props} style={{ overflow: 'auto' }} />,
   code: CodeBlock,
   // eslint-disable-next-line react/display-name
   img: (props) => (
