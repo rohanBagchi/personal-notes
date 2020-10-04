@@ -35,7 +35,10 @@ export default function CodeBlock({ children, className, live, render }) {
   return (
     <Highlight {...defaultProps} code={children.trim()} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className} style={{ ...style, padding: '20px' }}>
+        <pre
+          className={className}
+          style={{ ...style, padding: '20px', overflow: 'auto' }}
+        >
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (

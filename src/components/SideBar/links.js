@@ -12,11 +12,11 @@ export default [
     path: 'ProgressBarJS',
   },
   {
-    name: 'LoggerHOC',
+    name: 'Logger HOC',
     path: 'LoggerHOC',
   },
   {
-    name: 'BindPolyfill',
+    name: 'Bind Polyfill',
     path: 'BindPolyfill',
   },
   {
@@ -44,23 +44,23 @@ export default [
     path: 'Promise',
   },
   {
-    name: 'BoxSizing',
+    name: 'Box Sizing',
     path: 'BoxSizing',
   },
   {
-    name: 'PreloadPrefetchAndPreconnect',
+    name: 'Preload Prefetch & Preconnect',
     path: 'PreloadPrefetchAndPreconnect',
   },
   {
-    name: 'ReactComponentLifeCycle',
+    name: 'React Component LifeCycle',
     path: 'ReactComponentLifeCycle',
   },
   {
-    name: 'CriticalRenderPath',
+    name: 'Critical Render Path',
     path: 'CriticalRenderPath',
   },
   {
-    name: 'WhyBindClassMethodsInReact',
+    name: 'Why Bind Class Methods In React',
     path: 'WhyBindClassMethodsInReact',
   },
 ];

@@ -24,7 +24,11 @@ const ProgressBarJS = () => {
 
   return (
     <>
-      <button type="button" onClick={() => setProgress(true)}>
+      <button
+        type="button"
+        onClick={() => setProgress(true)}
+        style={{ marginRight: '5px' }}
+      >
         Go!
       </button>
       <button type="button" onClick={() => setProgress(false)}>
@@ -37,6 +41,7 @@ const ProgressBarJS = () => {
           backgroundColor: '#d8d8d8',
           boxSizing: 'border-box',
           position: 'relative',
+          marginTop: '10px',
         }}
       >
         <span

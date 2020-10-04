@@ -61,3 +61,12 @@ a {
     display: none;
   }
 }
+
+button {
+  border-radius: 0;
+  border: 0;
+  background-color: #0870f3;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+}
