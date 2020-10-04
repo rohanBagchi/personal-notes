@@ -63,4 +63,20 @@ export default [
     name: 'Why Bind Class Methods In React',
     path: 'WhyBindClassMethodsInReact',
   },
+  {
+    name: 'InfiniteSum',
+    path: 'InfiniteSum',
+  },
+  {
+    name: 'FlattenArray',
+    path: 'FlattenArray',
+  },
+  {
+    name: 'Reduce Polyfill',
+    path: 'ReducePolyfill',
+  },
+  {
+    name: 'Promise Polyfill',
+    path: 'PromisePolyfill',
+  },
 ];

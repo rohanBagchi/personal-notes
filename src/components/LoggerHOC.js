@@ -1,5 +1,4 @@
 import React from 'react';
-import Gist from 'react-gist';
 
 export function LoggerHOC(Component) {
   const InnerComponent = (props) => {
@@ -42,8 +41,6 @@ export default function LoggerHOCExample() {
         />
       </label>
       <EnhancedComponentToBeLogged name={name} />
-
-      <Gist id="cc959c486072eb32af228422dff4a3bf" />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import Gist from 'react-gist';
-import { CustomPromise } from '../utils';
+import { CustomPromise } from '../../utils';
 
 const Promise = () => {
   const [promiseMessages, setPromiseMessages] = useState([]);
@@ -26,17 +25,12 @@ const Promise = () => {
       });
   return (
     <div>
-      <h1>Promise Polyfill / Implementation</h1>
-
       <button type="button" onClick={runPromise}>
         Run Promise polyfill!!
       </button>
 
       <h4>Promise Results</h4>
       <pre>{JSON.stringify(promiseMessages, null, 2)}</pre>
-
-      <Gist id="a70a77802ef17361a1b0328a0b42cffe" />
-      <Gist id="cbcbabd037e9c3e3edc7fae9e8f5c605" />
     </div>
   );
 };

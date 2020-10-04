@@ -1,6 +1,5 @@
 import React from 'react';
-import Gist from 'react-gist';
-import { bind } from '../utils';
+import { bind } from '../../utils';
 
 export default class BindPolyfill extends React.Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -37,7 +36,6 @@ export default class BindPolyfill extends React.Component {
 
         <h4>Bind Results</h4>
         <pre>{JSON.stringify(this.state.message, null, 2)}</pre>
-        <Gist id="8985ab8d1d31181d8c25135e9304cd32" />
       </div>
     );
   }
