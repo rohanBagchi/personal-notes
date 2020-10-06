@@ -5,6 +5,12 @@ import BindPolyfill from '../src/components/BindPolyfill';
 <BindPolyfill />
 
 ```js
+export const bind = (fn, context, ...args) => (newArgs) => {
+  fn.apply(context, args.concat(newArgs));
+};
+```
+
+```js
 import React from "react";
 import { bind } from "../utils";
 

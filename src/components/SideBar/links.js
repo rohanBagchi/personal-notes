@@ -40,10 +40,6 @@ export default [
     path: 'Debounce',
   },
   {
-    name: 'Promise',
-    path: 'Promise',
-  },
-  {
     name: 'Box Sizing',
     path: 'BoxSizing',
   },
@@ -78,5 +74,9 @@ export default [
   {
     name: 'Promise Polyfill',
     path: 'PromisePolyfill',
+  },
+  {
+    name: 'Cross Domain Cookie',
+    path: 'CrossDomainCookie',
   },
 ];

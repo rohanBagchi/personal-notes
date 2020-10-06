@@ -25,17 +25,24 @@ a {
 
 .sidebar {
   width: 20%;
-  background-color: azure;
   border-right: 1px solid #d8d8d8;
 }
 .content {
   width: 80%;
-  background-color: cornsilk;
   padding: 20px;
 }
 
 .sidebar .sidebar-toggle {
   display: none;
+}
+
+code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 @media screen and (max-width: 800px) {
