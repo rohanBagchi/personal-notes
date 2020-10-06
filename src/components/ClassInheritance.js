@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Gist from 'react-gist';
 
 function Person(name, age) {
   this.name = name;
@@ -27,7 +26,6 @@ const ClassInheritance = () => {
 
   return (
     <div>
-      <h1>Class Inheritance</h1>
       <button type="button" onClick={runClassInheritence}>
         runClassInheritence
       </button>
@@ -35,8 +33,6 @@ const ClassInheritance = () => {
         Reset
       </button>
       <p>{msg}</p>
-
-      <Gist id="9a62415a812a3435d9fad57db756f734" />
     </div>
   );
 };

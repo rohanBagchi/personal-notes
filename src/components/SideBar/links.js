@@ -79,4 +79,12 @@ export default [
     name: 'Cross Domain Cookie',
     path: 'CrossDomainCookie',
   },
+  {
+    name: 'DOMContentLoaded Vs onLoad',
+    path: 'DOMContentLoadedVsonLoad',
+  },
+  {
+    name: 'Simple Memoize',
+    path: 'SimpleMemoize',
+  },
 ];
