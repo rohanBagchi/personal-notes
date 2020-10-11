@@ -24,6 +24,10 @@ export default [
     path: 'TestingQuerySelectorAll',
   },
   {
+    name: 'Classical Vs Prototypal Inheritence',
+    path: 'ClassicalVsPrototypalInheritence',
+  },
+  {
     name: 'Class Inheritance',
     path: 'ClassInheritance',
   },
