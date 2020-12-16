@@ -91,4 +91,8 @@ export default [
     name: 'Simple Memoize',
     path: 'SimpleMemoize',
   },
+  {
+    name: 'FindingIslands',
+    path: 'FindingIslands',
+  },
 ];
